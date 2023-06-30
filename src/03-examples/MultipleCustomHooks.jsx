@@ -5,18 +5,18 @@ export const MultipleCustomHooks = () => {
 
     const { counter, increment} = useCounter(1);
     const { data, isLoading, hasError } = useFetch(`https://rickandmortyapi.com/api/character/${ counter }`);
-    const {name, location, image} = !!data && data;
+    const {name, location} = !!data && data;
     
 
   return (
     <>
-        <h1>Rick & Morty API - Character Locations</h1>
+        <h1>Rick and Morty - Character Locations</h1>
         <hr/>
 
         {
             isLoading
                 ? <LoadingCharacter />
-                : <Character name={ name } location={ location } image={ image }/>
+                : <Character name={ name } location={ location }/>
         }
 
         <button 
