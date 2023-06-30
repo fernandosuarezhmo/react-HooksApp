@@ -11,13 +11,13 @@ export const FocusScreen = () => {
 
   return (
     <>
-        <h1>FocusScreen</h1>
+        <h1>Focus Screen</h1>
         <hr/>
 
         <input
             ref={ inputRef }
             type="text"
-            placeholder="Ingrese su nombre"
+            placeholder="Enter your name"
             className="form-control"
             
         />

@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef, useState } from "react"
 
-export const Character = ({ name, location }) => {
+export const Character = ({ name, location, image }) => {
 
   const pRef = useRef();
   const [boxSize, setBoxSize] = useState({ width: 0, height: 0 })
@@ -16,15 +16,18 @@ export const Character = ({ name, location }) => {
 
   return (
     <>
+      <img 
+          alt={ name } 
+          src={ image } 
+          style={{ height: "200px", paddingRight: "10px" }} 
+       /> 
       <blockquote 
-        className="blockquote text-end"
-        style={{ display: 'flex' }}
+        className="blockquote"
         >
-          <p ref={ pRef } className="mb-1">{ location.name }</p>
-          <footer className="blockquote-footer">{ name }</footer>
+          <p ref={ pRef } className="mb-1">{ name }</p>
+          <footer className="blockquote-footer">{ location.name }</footer>
       </blockquote>
 
-      <code>{ JSON.stringify( boxSize ) }</code>
     </>
   )
 }
