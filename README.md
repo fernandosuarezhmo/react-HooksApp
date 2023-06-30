@@ -11,7 +11,7 @@ The exercises included here are simple counters and forms, designed to demonstra
 
 ## Acknowledgments
 
-###Some of these exersices has his own repository, so if you want to try the build, you could check out any of them in my profile.
+Some of these exersices has his own repository, so if you want to try the build, you could check out any of them in my profile.
 
 These exercises were created for learning and practice purposes, inspired by the official React documentation and other online resources. I appreciate the developer community for sharing their knowledge and experiences.
 
